@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stage 03 - Formulário avançado</title>
+    <link rel="stylesheet" href="style.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Staatliches&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="page">
+        <header>
+            <h1>AVALIE A SUA MENTORIA</h1>
+            <p>Chegou a hora de avaliar o seu mentor. Bora lá?</p>
+            <img src="images/img1.png" alt="">
+        </header>
+
+        <form id="myForm">
+            <fieldset>
+                <legend class="title">
+                    <p>INFORMAÇÕES PESSOAIS</p>
+                </legend>
+                <div class="col-2">
+                    <div class="inputWrapper">
+                        <label for="eventName">Nome</label>
+                        <input required type="text" id="eventName">
+                    </div>
+                    <div class="inputWrapper">
+                        <label for="eventLastname">Sobrenome</label>
+                        <input required type="text" id="eventLastname">
+                    </div>
+                </div>
+                <div class="inputWrapper">
+                    <label for="eventEmail">Email<span>(digite um email válido)</span></label>
+                    <input required type="email" id="eventEmail">
+                </div>
+            </fieldset>
+
+            <fieldset class="titleSecond">
+                <legend>INFORMAÇÕES DO MENTOR</legend>
+                <div class="inputWrapper">
+                    <label for="eventMentor">Selecione quem foi seu mentor</label>
+                    <select required id="eventMentor">
+                        <option value="React">Diego</option>
+                        <option value="CSS">Mayke</option>
+                        <option value="Captain">Capitão</option>
+                    </select>
+                </div>
+                <div class="inputWrapper">
+                    <label for="eventFeedback">Feedback sobre o mentor</label>
+                    <textarea required id="eventFeedback" cols="50" rows="10"></textarea>
+                </div>
+                <div class="checkboxWrapper">
+                    <input required type="checkbox" id="eventCheck">
+                    <label for="eventCheck">Todas as minhas dúvidas foram esclarecidas durante a mentoria.</label>
+                </div>
+            </fieldset>
+
+            <fieldset class="titleThree">
+                <legend>AGENDANDO PRÓXIMA MENTORIA</legend>
+                <div class="col-3">
+                    <div class="inputWrapper">
+                        <label for="eventDate">Data<span>(DD/MM/AAAA)</span></label>
+                        <input required type="date" id="eventDate">
+                    </div>
+                    <div class="inputWrapper">
+                        <label for="eventDas">Das</label>
+                        <input required type="time" id="eventDas">
+                    </div>
+                    <div class="inputWrapper">
+                        <label for="eventAte">Até</label>
+                        <input required type="time" id="eventAte">
+                    </div>
+                </div>
+            </fieldset>
+
+            <footer>
+                <button type="submit">Salvar</button>
+            </footer>
+        </form>
+    </div>
+</body>
+
+</html>
